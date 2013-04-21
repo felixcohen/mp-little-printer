@@ -1,0 +1,10 @@
+{
+    "name": "Manhattans Project Cocktail Course",
+    "delivered_on": "Delivered on fridays",
+    "description": "Build a cocktail cabinet, and learn how to make the most of it",
+    "send_timezone_info": "true",
+    "send_delivery_count": "true",
+    "external_configuration": "false",
+    "config" : {
+    }
+}

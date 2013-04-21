@@ -1,0 +1,12 @@
+    body {
+      width: 384px;
+      padding: 0px;
+      margin: 0px;
+      font-family: Verdana, sans-serif;
+    }
+    h1 {
+      word-wrap: break-word;
+    }
+    p {
+      font-size: 25px;
+    }
