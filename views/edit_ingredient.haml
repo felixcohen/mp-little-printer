@@ -1,0 +1,10 @@
+%form{"accept-charset" => "utf-8", :action => "/articles/#{@article.id}", :method => "post"}
+  %input{:name => "_method", :type => "hidden", :value => "put"}/
+  %p
+    Title:
+    %input{:id => "article[title]", :name => "article[title]", :type => "text", :value => @article.title}/
+  %p
+    Content:
+    %textarea{:cols => "40", :name => "article[content]", :rows => "3"}= @article.content
+  %p
+    %input{:type => "submit", :value => "Update article"}/

@@ -1,0 +1,19 @@
+%table
+  %tr
+    %td
+      %strong
+        Name
+    %td 
+      %strong
+        Description
+    %td
+      %strong
+        Edit
+  - @ingredients.each do |ingredient|
+    %tr
+      %td
+        =ingredient.name
+      %td
+        =ingredient.description
+      %td
+        Edit
