@@ -23,7 +23,7 @@ get '/edition/' do
   # Set the etag to be this content
   date = Time.parse(params['local_delivery_time'])
   etag Digest::MD5.hexdigest(date.strftime('%d%m%Y'))
-  erb :publication
+  haml :publication, :layout => false
 end
 
 
@@ -40,7 +40,7 @@ get '/sample/' do
 
   # Set the etag to be this content
   #etag Digest::MD5.hexdigest(date.strftime('%d%m%Y'))
-  erb :publication
+  haml :publication, :layout => false
 end
 
 

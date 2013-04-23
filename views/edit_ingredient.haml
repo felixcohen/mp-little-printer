@@ -1,10 +1,13 @@
-%form{"accept-charset" => "utf-8", :action => "/articles/#{@article.id}", :method => "post"}
+%form{"accept-charset" => "utf-8", :action => "/ingredients/#{@ingredient.id}", :method => "post"}
   %input{:name => "_method", :type => "hidden", :value => "put"}/
   %p
-    Title:
-    %input{:id => "article[title]", :name => "article[title]", :type => "text", :value => @article.title}/
+    Name:
+    %input{:id => "ingredient[name]", :name => "ingredient[name]", :type => "text", :value => @ingredient.name}/
   %p
-    Content:
-    %textarea{:cols => "40", :name => "article[content]", :rows => "3"}= @article.content
+    Description:
+    %textarea{:cols => "40", :name => "ingredient[description]", :rows => "3"}= @ingredient.description
   %p
-    %input{:type => "submit", :value => "Update article"}/
+    Week
+    %input{:id => "ingredient[week]", :name => "ingredient[week]", :type => "text", :value => @ingredient.week}/
+  %p
+    %input{:type => "submit", :value => "Update ingredient"}/

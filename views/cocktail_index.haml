@@ -1,0 +1,24 @@
+%table
+  %tr
+    %td
+      %strong
+        Name
+    %td 
+      %strong
+        Description
+    %td 
+      %strong
+        Instructions
+    %td
+      %strong
+        Edit
+  - @cocktails.each do |cocktail|
+    %tr
+      %td
+        =cocktail.name
+      %td
+        =cocktail.description
+      %td
+        =cocktail.instructions
+      %td
+        ='<a href="/admin/ingredient/'+cocktail.id.to_s+'/edit">Edit</a>'

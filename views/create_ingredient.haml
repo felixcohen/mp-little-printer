@@ -6,4 +6,7 @@
     Description:
     %textarea{:cols => "40", :name => "ingredient[description]", :rows => "3"}
   %p
+    Week
+    %input{:id => "ingredient[week]", :name => "ingredient[week]", :type => "text", :value => @ingredient.week}/
+  %p
     %input{:type => "submit", :value => "Add ingredient"}/

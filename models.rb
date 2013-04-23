@@ -5,7 +5,7 @@ class Cocktail
 
   property :id, Serial
   property :name, String
-  property :content, Text
+  property :description, Text
   property :instructions, Text
 
   has n, :cocktail_ingredients
@@ -16,6 +16,7 @@ class Ingredient
   include DataMapper::Resource
 
   property :id, Serial
+  property :week, Integer
   property :name, String
   property :description, Text
 

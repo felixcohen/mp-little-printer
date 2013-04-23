@@ -3,6 +3,9 @@
     %td
       %strong
         Name
+    %td
+      %strong
+        Week
     %td 
       %strong
         Description
@@ -14,6 +17,8 @@
       %td
         =ingredient.name
       %td
+        =ingredient.week
+      %td
         =ingredient.description
       %td
-        Edit
+        ='<a href="/admin/ingredient/'+ingredient.id.to_s+'/edit">Edit</a>'

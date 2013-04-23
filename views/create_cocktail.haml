@@ -1,0 +1,12 @@
+%form{"accept-charset" => "utf-8", :action => "/cocktails", :method => "post"}
+  %p
+    Name:
+    %input{:id => "cocktail[name]", :name => "cocktail[name]", :type => "text", :value => ""}/
+  %p
+    Description:
+    %textarea{:cols => "40", :name => "cocktail[description]", :rows => "3"}
+  %p
+    Instructions:
+    %textarea{:cols => "40", :name => "cocktail[instructions]", :rows => "3"}
+  %p
+    %input{:type => "submit", :value => "Add cocktail"}/

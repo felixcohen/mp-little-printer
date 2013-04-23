@@ -1,0 +1,36 @@
+!!! 5
+%html(lang="en")
+  %head
+    %title Manhattans Project Little Printer
+    %link{:rel => 'stylesheet', :href => '/bootstrap.css', :type => "text/css"}
+    %link{:rel => 'stylesheet', :href => '/launch.css', :type => "text/css"}
+
+  %body
+    .topbar
+      .fill
+        .container
+          %a{:class => "brand", :href => ""}The Manhattans Project
+          %ul(class="nav")
+            %li(class="active")
+              %a(href = "/admin/cocktail_index") Cocktails
+            %li
+              %a(href = "/admin/ingredient_index") Ingredients
+            %li
+              %a(href = "/admin/create_ingredient") Add Ingredient
+            %li
+              %a(href = "/admin/create_cocktail") Add Cocktail
+    .container
+      .content
+        .page-header
+          %h1
+            -if !@title.nil?
+              = @title
+        .row
+          .span14
+            = yield
+
+
+          
+
+
+      %footer
