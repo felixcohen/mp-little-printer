@@ -56,7 +56,7 @@ GEM
     fastercsv (1.5.5)
     haml (4.0.2)
       tilt
-    json (1.6.6)
+    json (1.6.8)
     json_pure (1.7.7)
     multi_json (1.7.2)
     rack (1.4.1)
